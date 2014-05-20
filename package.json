@@ -8,14 +8,10 @@
     },
     "dependencies": {
         "express": "latest",
-        "jade": "latest",
         "mongoose": "latest",
         "body-parser": "latest",
         "method-override": "latest",
         "morgan": "latest"
-    },
-    "devDependencies": {
-        "bower": "latest"
     },
     "main": "server.js"
 }
