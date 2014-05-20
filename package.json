@@ -1,0 +1,21 @@
+{
+    "name": "mean-todo-app",
+    "version": "1.0.0",
+    "description": "MEAN ToDo Sample App",
+    "engines": {
+        "node": ">= 0.10.0",
+        "npm": ">= 1.2.0"
+    },
+    "dependencies": {
+        "express": "latest",
+        "jade": "latest",
+        "mongoose": "latest",
+        "body-parser": "latest",
+        "method-override": "latest",
+        "morgan": "latest"
+    },
+    "devDependencies": {
+        "bower": "latest"
+    },
+    "main": "server.js"
+}
