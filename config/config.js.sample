@@ -1,0 +1,14 @@
+module.exports = {
+
+	// the database url to connect
+	dbUris : 'mongodb://192.168.0.10:27017,mongodb://192.168.0.11:27017,mongodb://192.168.0.12:27017/mean-todo',
+	
+	// the database connection options
+	dbOptions : {
+		server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
+		replset: { rs_name: 'mean-rs' , socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
+		user: 'meanuser',
+  		pass: 'mean',
+		auth: { authdb: 'admin' }
+	}
+}
