@@ -4,7 +4,6 @@ var bodyParser 		= require('body-parser');
 var methodOverride 	= require('method-override');
 var morgan  		= require('morgan'); 			
 var mongoose 		= require('mongoose');
-var port  	 		= process.env.PORT || 80;
 var config 			= require('./config/config');
 
 mongoose.connect(config.dbUris, config.dbOptions);
@@ -17,5 +16,5 @@ app.use(methodOverride());
 // routes
 require('./app/routes.js')(app);
 
-app.listen(port);
-console.log("MEAN ToDo App listening on port " + port);
+app.listen(80);
+console.log("MEAN ToDo App listening on port 80");
